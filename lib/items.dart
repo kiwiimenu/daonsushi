@@ -1,52 +1,42 @@
 // ignore_for_file: prefer_interpolation_to_compose_strings, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:daonsushi/details_page.dart';
 
-GestureDetector itemContainer(
-    String itemname, String price, BuildContext context) {
-  return GestureDetector(
-    onTap: () {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-            builder: (context) =>
-                generateDetailsPage(context, itemname, price)),
-      );
-    },
-    child: Container(
+Container itemContainer(String itemname, String price, BuildContext context) {
+  return Container(
       margin: const EdgeInsets.fromLTRB(15, 15, 15, 15),
       decoration: defaultboxdecoration(itemname),
       alignment: Alignment.bottomCenter,
       child: Container(
-        height: 60,
-        alignment: Alignment.bottomCenter,
-        padding: const EdgeInsets.all(10),
-        decoration: const BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.only(
-              bottomRight: Radius.circular(10.0),
-              bottomLeft: Radius.circular(10.0)),
+        // margin: const EdgeInsets.all(2),
+        child: Container(
+          height: 60,
+          alignment: Alignment.bottomCenter,
+          padding: const EdgeInsets.all(10),
+          decoration: const BoxDecoration(
+            color: Color.fromARGB(255, 40, 40, 40),
+            borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(10.0),
+                bottomLeft: Radius.circular(10.0)),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Flexible(
+                child: Text(
+                  itemname,
+                  style: const TextStyle(
+                      fontWeight: FontWeight.normal,
+                      fontSize: 15,
+                      fontFamily: "SFBold",
+                      color: Colors.white),
+                ),
+              )
+            ],
+          ),
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Flexible(
-              child: Text(
-                itemname,
-                style: const TextStyle(
-                    fontWeight: FontWeight.normal,
-                    fontSize: 15,
-                    fontFamily: "SFBold",
-                    color: Colors.black),
-              ),
-            )
-          ],
-        ),
-      ),
-    ),
-  );
+      ));
 }
 
 BoxDecoration defaultboxdecoration(String itemnumber) {
