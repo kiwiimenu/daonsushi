@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
 import 'package:daonsushi/main.dart';
 
@@ -10,28 +12,37 @@ Row nameprice(String name, String price, [String desc = ""]) {
           children: [
             Text(
               name,
-              style: const TextStyle(color: Colors.white),
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 20,
+                fontFamily: "Nunito",
+              ),
               // textAlign: TextAlign.left,
             ),
-            Text(
-              desc,
-              style: const TextStyle(color: Color.fromARGB(255, 202, 202, 202)),
-
-              // textAlign: TextAlign.left,
-            ),
+            desc == ""
+                ? Container()
+                : Text(
+                    desc,
+                    style: const TextStyle(
+                      color: Color.fromARGB(
+                        255,
+                        202,
+                        202,
+                        202,
+                      ),
+                    ),
+                  ),
           ],
         ),
       ),
       Container(
           child: Text(
         price,
-        style: const TextStyle(
-          color: Colors.white,
-        ),
+        style: const TextStyle(color: Colors.white, fontSize: 20),
         textAlign: TextAlign.right,
       )),
       const SizedBox(
-        height: 45,
+        height: 50,
       )
     ],
   );
@@ -136,13 +147,13 @@ void createRow() {
   ssmshicmb.add(nameprice("Sashimi & Sushi (L)", "\$  29.95"));
 
   cmbspcl.add(
-      nameprice("Combo A (Sushi 6pcs Sashimi 4pcs Roll 6pcs)", "\$ 19.95"));
+      nameprice("Combo A", "\$ 19.95", "Sushi 6pcs Sashimi 4pcs Roll 6pcs"));
   cmbspcl.add(nameprice(
-      "Combo B (Sushi 6pcs Sashimi 6pcs Spicy Roll 6pcs)", "\$ 22.95"));
+      "Combo B", "\$ 22.95", "Sushi 6pcs Sashimi 6pcs Spicy Roll 6pcs"));
   cmbspcl.add(nameprice(
-      "Combo C (Sushi 10pcs Sashimi 8pcs Dynamite Roll 8pcs)", "\$ 35.95"));
+      "Combo C", "\$ 35.95", "Sushi 10pcs Sashimi 8pcs Dynamite Roll 8pcs"));
   cmbspcl.add(nameprice(
-      "Combo D (Sushi 12pcs Sashimi 10pcs Dragon Roll 8pcs)", "\$ 41.95"));
+      "Combo D", "\$ 41.95", "Sushi 12pcs Sashimi 10pcs Dragon Roll 8pcs"));
 
   ptytry.add(nameprice("Party Tray (S)", "\$ 42.95",
       "Sushi 12pcs Sashimi 12pcs California Roll 6pcs Spicy Salmon 6pcs"));

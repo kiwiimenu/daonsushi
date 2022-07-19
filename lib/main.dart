@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, avoid_unnecessary_containers, depend_on_referenced_packages, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, avoid_unnecessary_containers, depend_on_referenced_packages, prefer_const_literals_to_create_immutables, no_leading_underscores_for_local_identifiers
 
 import 'package:daonsushi/setup.dart';
 import 'package:flutter/material.dart';
@@ -63,6 +63,7 @@ class MyApp extends StatelessWidget {
         hoverColor: Colors.transparent,
         highlightColor: Colors.transparent,
         splashColor: Colors.transparent,
+        fontFamily: "Nunito",
       ),
       home: const MyHomePage(title: 'Top Bar'),
     );
@@ -107,28 +108,19 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Scaffold(
             body: Center(
                 child: Scaffold(
-                    backgroundColor: Color.fromARGB(255, 40, 40, 40),
+                    backgroundColor: Color.fromARGB(255, 35, 35, 35),
                     appBar: AppBar(
                       shadowColor: Colors.grey.withOpacity(0.2),
                       elevation: 3,
                       toolbarHeight: 90,
-                      backgroundColor: Color.fromARGB(255, 40, 40, 40),
-                      flexibleSpace: Container(
-                        alignment: Alignment.bottomLeft,
-                        margin: const EdgeInsets.fromLTRB(0, 25, 0, 0),
-                        color: Color.fromARGB(255, 40, 40, 40),
-                        child: Column(
-                            // mainAxisAlignment: MainAxisAlignment.end,
-                            // crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Center(
-                                  child: Container(
-                                alignment: Alignment.center,
-                                width: 400,
-                                height: 60,
-                                child: Image.asset('assets/logo.png'),
-                              )),
-                            ]),
+                      backgroundColor: Color.fromARGB(255, 35, 35, 35),
+                      flexibleSpace: Center(
+                        child: Container(
+                          alignment: Alignment.center,
+                          width: 400,
+                          height: 60,
+                          child: Image.asset('assets/logo.png'),
+                        ),
                       ),
                     ),
                     body: SingleChildScrollView(
@@ -148,7 +140,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Salad/Soup/Rice",
-                          style: TextStyle(color: Colors.white, fontSize: 24,fontFamily: "SFBold",),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontFamily: "Nunito",
+                          ),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -167,7 +163,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Salmon Sashimi",
-                          style: TextStyle(color: Colors.white, fontSize: 24,fontFamily: "SFBold",),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontFamily: "Nunito",
+                          ),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -197,7 +197,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Dinner Box Combo",
-                          style: TextStyle(color: Colors.white, fontSize: 24,fontFamily: "SFBold",),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontFamily: "Nunito",
+                          ),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -245,7 +249,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Yaki Udon",
-                          style: TextStyle(color: Colors.white, fontSize: 24,fontFamily: "SFBold",),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontFamily: "Nunito",
+                          ),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -319,7 +327,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Roll Combo",
-                          style: TextStyle(color: Colors.white, fontSize: 24,fontFamily: "SFBold",),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontFamily: "Nunito",
+                          ),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -341,11 +353,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       Container(
                         //start
                         alignment: Alignment.center,
-
                         height: 55,
                         child: Text(
                           "Combo Special",
-                          style: TextStyle(color: Colors.white, fontSize: 24,fontFamily: "SFBold",),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontFamily: "Nunito",
+                          ),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -362,7 +377,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Party Tray",
-                          style: TextStyle(color: Colors.white, fontSize: 24,fontFamily: "SFBold",),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontFamily: "Nunito",
+                          ),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -429,18 +448,20 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Container makeCategory(
       context, category cat, String categoryName, int _current) {
-    int localIdx = 0;
     return Container(
         child: Column(
             // mainAxisAlignment: MainAxisAlignment.start,
             // crossAxisAlignment: CrossAxisAlignment.start,
             children: [
           Container(
-            margin: EdgeInsets.only(left: 35, top: 35),
+            margin: EdgeInsets.only(top: 35),
             alignment: Alignment.center,
             child: Text(
               categoryName,
-              style: TextStyle(color: Colors.white, fontSize: 24),
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 24,
+              ),
             ),
           ),
           Column(

@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_interpolation_to_compose_strings, prefer_const_constructors
+// ignore_for_file: prefer_interpolation_to_compose_strings, prefer_const_constructors, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
 
@@ -40,9 +40,8 @@ Container itemContainer(String itemname, String price, BuildContext context) {
                     child: Text(
                       itemname,
                       style: const TextStyle(
-                          fontWeight: FontWeight.normal,
                           fontSize: 15,
-                          fontFamily: "SFBold",
+                          fontFamily: "Nunito",
                           color: Colors.white),
                     ),
                   )
