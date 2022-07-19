@@ -148,7 +148,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Salad/Soup/Rice",
-                          style: TextStyle(color: Colors.white, fontSize: 24),
+                          style: TextStyle(color: Colors.white, fontSize: 24,fontFamily: "SFBold",),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -167,7 +167,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Salmon Sashimi",
-                          style: TextStyle(color: Colors.white, fontSize: 24),
+                          style: TextStyle(color: Colors.white, fontSize: 24,fontFamily: "SFBold",),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -197,7 +197,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Dinner Box Combo",
-                          style: TextStyle(color: Colors.white, fontSize: 24),
+                          style: TextStyle(color: Colors.white, fontSize: 24,fontFamily: "SFBold",),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -245,7 +245,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Yaki Udon",
-                          style: TextStyle(color: Colors.white, fontSize: 24),
+                          style: TextStyle(color: Colors.white, fontSize: 24,fontFamily: "SFBold",),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -319,7 +319,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Roll Combo",
-                          style: TextStyle(color: Colors.white, fontSize: 24),
+                          style: TextStyle(color: Colors.white, fontSize: 24,fontFamily: "SFBold",),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -345,7 +345,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Combo Special",
-                          style: TextStyle(color: Colors.white, fontSize: 24),
+                          style: TextStyle(color: Colors.white, fontSize: 24,fontFamily: "SFBold",),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -362,7 +362,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Party Tray",
-                          style: TextStyle(color: Colors.white, fontSize: 24),
+                          style: TextStyle(color: Colors.white, fontSize: 24,fontFamily: "SFBold",),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -432,8 +432,8 @@ class _MyHomePageState extends State<MyHomePage> {
     int localIdx = 0;
     return Container(
         child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            // mainAxisAlignment: MainAxisAlignment.start,
+            // crossAxisAlignment: CrossAxisAlignment.start,
             children: [
           Container(
             margin: EdgeInsets.only(left: 35, top: 35),

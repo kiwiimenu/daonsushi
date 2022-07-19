@@ -1,32 +1,46 @@
 import 'package:flutter/material.dart';
 import 'package:daonsushi/main.dart';
 
-Row nameprice(String name, String price) {
+Row nameprice(String name, String price, [String desc = ""]) {
   return Row(
     children: [
       Expanded(
-          child: Text(
-        name,
-        style: TextStyle(color: Colors.white),
-      )),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              name,
+              style: const TextStyle(color: Colors.white),
+              // textAlign: TextAlign.left,
+            ),
+            Text(
+              desc,
+              style: const TextStyle(color: Color.fromARGB(255, 202, 202, 202)),
+
+              // textAlign: TextAlign.left,
+            ),
+          ],
+        ),
+      ),
       Container(
           child: Text(
         price,
-        style: TextStyle(
+        style: const TextStyle(
           color: Colors.white,
         ),
         textAlign: TextAlign.right,
       )),
-      SizedBox(
-        height: 25,
+      const SizedBox(
+        height: 45,
       )
     ],
   );
 }
 
 void createRow() {
-  appet.add(nameprice("Edamame", "\$ 5.95 "));
-  appet.add(nameprice("Agedashi Tofu", "\$ 6.95 "));
+  appet.add(nameprice("Edamame", "\$ 5.95 ", "Boiled green bean"));
+  appet.add(nameprice(
+      "Agedashi Tofu", "\$ 6.95 ", "Deep fried tofu with teriyaki sauce"));
   appet.add(nameprice("Sashimi Appetizer", "\$ 10.95 "));
   appet.add(nameprice("Shrimp Tempura", "\$ 11.95 "));
   appet.add(nameprice("Sushi Appetizer", "\$ 10.95 "));
@@ -45,7 +59,8 @@ void createRow() {
   lnchbxcmb.add(nameprice("Sushi & Rolls", "\$ 14.95"));
   lnchbxcmb.add(nameprice("Sashimi & Rolls", "\$ 14.95"));
   lnchbxcmb.add(nameprice("Roll Lunch Box", "\$ 13.95"));
-  lnchbxcmb.add(nameprice("Bulgogi Lunch Box", "\$ 13.95"));
+  lnchbxcmb.add(nameprice(
+      "Bulgogi Lunch Box", "\$ 13.95", "Marinated Korean Style Beef"));
   lnchbxcmb.add(nameprice("Combo Lunch Box", "\$ 15.95"));
   lnchbxcmb.add(nameprice("Teriyaki Box", "\$ 13.95"));
 
@@ -89,10 +104,6 @@ void createRow() {
   clscrll.add(nameprice("Tuna Roll", "\$ 7.95"));
   clscrll.add(nameprice("Unagi Roll", "\$ 7.95"));
 
-  spclrll.add(nameprice("Spicy Crab Roll ", "\$ 6.95"));
-  spclrll.add(nameprice("Spicy Salmon Roll ", "\$ 6.95"));
-  spclrll.add(nameprice("Spicy Tuna Roll", "\$ 7.95"));
-
   drgnrll.add(nameprice("Black Dragon ", "\$ 15.95"));
   drgnrll.add(nameprice("Green Dragon ", "\$ 14.95"));
   drgnrll.add(nameprice("Gold Dragon ", "\$ 14.95"));
@@ -102,8 +113,10 @@ void createRow() {
   spclrll.add(nameprice("Caterpillar Roll", "\$ 13.95"));
   spclrll.add(nameprice("Crispy Crunch Roll ", "\$ 15.95"));
   spclrll.add(nameprice("Double Shrimp Roll ", "\$ 15.95"));
-  spclrll.add(nameprice("Dynamite Roll", "\$ 13.95"));
-  spclrll.add(nameprice("Hawaiian Roll", "\$ 13.95"));
+  spclrll.add(nameprice("Dynamite Roll", "\$ 13.95",
+      "Large California Roll with 2pcs Deep Fried Shrimp"));
+  spclrll.add(nameprice("Hawaiian Roll", "\$ 13.95",
+      "Large Roll with Crab, Mango, Avacado, and Cucumber"));
   spclrll.add(nameprice("Phili Roll ", "\$ 13.95"));
   spclrll.add(nameprice("Spider Roll", "\$ 16.95"));
   spclrll.add(nameprice("Torched Salmon Roll", "\$ 15.95"));
@@ -131,16 +144,12 @@ void createRow() {
   cmbspcl.add(nameprice(
       "Combo D (Sushi 12pcs Sashimi 10pcs Dragon Roll 8pcs)", "\$ 41.95"));
 
-  ptytry.add(nameprice(
-      "Party Tray (S) 36pcs (Sushi 12pcs Sashimi 12pcs California Roll 6pcs Spicy Salmon 6pcs)",
-      "\$ 42.95 "));
-  ptytry.add(nameprice(
-      "Party Tray (M) 45pcs (Sushi 16pcs Sashimi 16pcs Spicy Salmon 6pcs Dynamite Roll 8pcs)",
-      "\$ 56.95 "));
-  ptytry.add(nameprice(
-      "Party Tray (L) 62pcs (Sushi 20pcs Sashimi 20pcs Dynamite Roll 8pcs)",
-      "\$ 76.95 "));
-  ptytry.add(nameprice(
-      "Party Tray (XL) 76pcs (Sushi 24pcs Sashimi 24pcs Dynamite Roll 8pcs Dragon Roll 8pcs California Roll 6pcs Spicy Salmon 6pcs)",
-      "\$ 90.95 "));
+  ptytry.add(nameprice("Party Tray (S)", "\$ 42.95",
+      "Sushi 12pcs Sashimi 12pcs California Roll 6pcs Spicy Salmon 6pcs"));
+  ptytry.add(nameprice("Party Tray (M)", "\$ 56.95",
+      "Sushi 16pcs Sashimi 16pcs Spicy Salmon 6pcs Dynamite Roll 8pcs"));
+  ptytry.add(nameprice("Party Tray (L)", "\$ 76.95",
+      "Sushi 20pcs Sashimi 20pcs Dynamite Roll 8pcs"));
+  ptytry.add(nameprice("Party Tray (XL)", "\$ 90.95",
+      "Sushi 24pcs Sashimi 24pcs Dynamite Roll 8pcs Dragon Roll 8pcs California Roll 6pcs Spicy Salmon 6pcs"));
 }
