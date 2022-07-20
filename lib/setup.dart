@@ -69,7 +69,8 @@ void createRow() {
 
   lnchbxcmb.add(
       nameprice("Sushi & Rolls", "\$ 14.95", "Sushi 6pcs Spicy Roll 6pcs"));
-  lnchbxcmb.add(nameprice("Sashimi & Rolls", "\$ 14.95"));
+  lnchbxcmb.add(
+      nameprice("Sashimi & Rolls", "\$ 14.95", "Sashimi 6pcs Spicy Roll 6pcs"));
   lnchbxcmb.add(nameprice(
       "Roll Lunch Box", "\$ 13.95", "Spicy Roll 6pcs California Roll 6pcs"));
   lnchbxcmb.add(nameprice(
@@ -112,8 +113,9 @@ void createRow() {
   vegeclsicrll.add(nameprice("Cucumber Roll", "\$ 5.95"));
   vegeclsicrll.add(nameprice("Avocado & Cucumber Roll ", "\$ 5.95"));
 
-  ykudn.add(nameprice("Vegetable Yaki Udon", "\$ 11.95","Chicken, Beef, or Shrimp"));
-  ykudn.add(nameprice("Yaki Udon", "\$ 12.95 "));
+  ykudn.add(nameprice("Vegetable Yaki Udon", "\$ 11.95",
+      "Chicken, Beef, or Shrimp pan stir fried noodles"));
+  ykudn.add(nameprice("Yaki Udon", "\$ 12.95", "Pan stir fried noodles"));
 
   spcyclrll.add(nameprice("Spicy Crab Roll ", "\$ 6.95"));
   spcyclrll.add(nameprice("Spicy Salmon Roll ", "\$ 6.95"));
@@ -126,12 +128,16 @@ void createRow() {
   clscrll.add(nameprice("Tuna Roll", "\$ 7.95"));
   clscrll.add(nameprice("Unagi Roll", "\$ 7.95"));
 
-  drgnrll.add(nameprice("Black Dragon ", "\$ 15.95","Dynamite Roll with BBQ Eel Topping"));
-  drgnrll.add(nameprice("Green Dragon ", "\$ 14.95","Dynamite Roll with Avacado Topping"));
-  drgnrll.add(nameprice("Gold Dragon ", "\$ 14.95","Dynamite Roll with Salmon Topping"));
+  drgnrll.add(nameprice(
+      "Black Dragon ", "\$ 15.95", "Dynamite Roll with BBQ Eel Topping"));
+  drgnrll.add(nameprice(
+      "Green Dragon ", "\$ 14.95", "Dynamite Roll with Avacado Topping"));
+  drgnrll.add(nameprice(
+      "Gold Dragon ", "\$ 14.95", "Dynamite Roll with Salmon Topping"));
   drgnrll.add(nameprice(
       "Red Dragon ", "\$ 15.95", "Dynamite Roll with Red Tuna Topping"));
-  drgnrll.add(nameprice("White Dragon ", "\$ 14.95","Dynamite Roll with Philadelphia Cream Cheese Topping"));
+  drgnrll.add(nameprice("White Dragon ", "\$ 14.95",
+      "Dynamite Roll with Philadelphia Cream Cheese Topping"));
 
   spclrll.add(nameprice("Caterpillar Roll", "\$ 13.95",
       "Large California Roll Topped with Avacado and BBQ Eel"));
@@ -176,21 +182,21 @@ void createRow() {
   ssmshicmb.add(nameprice(
       "Sashimi & Sushi (L)", "\$  29.95", "Sushi 10pcs Sashimi 10pcs"));
 
-  cmbspcl.add(
-      nameprice("Combo A", "\$ 19.95", "Sushi 6pcs Sashimi 4pcs Roll 6pcs"));
   cmbspcl.add(nameprice(
-      "Combo B", "\$ 22.95", "Sushi 6pcs Sashimi 6pcs Spicy Roll 6pcs"));
+      "Combo A 16pcs", "\$ 19.95", "Sushi 6pcs Sashimi 4pcs Roll 6pcs"));
   cmbspcl.add(nameprice(
-      "Combo C", "\$ 35.95", "Sushi 10pcs Sashimi 8pcs Dynamite Roll 8pcs"));
-  cmbspcl.add(nameprice(
-      "Combo D", "\$ 41.95", "Sushi 12pcs Sashimi 10pcs Dragon Roll 8pcs"));
+      "Combo B 18pcs", "\$ 22.95", "Sushi 6pcs Sashimi 6pcs Spicy Roll 6pcs"));
+  cmbspcl.add(nameprice("Combo C 26pcs", "\$ 35.95",
+      "Sushi 10pcs Sashimi 8pcs Dynamite Roll 8pcs"));
+  cmbspcl.add(nameprice("Combo D 30pcs", "\$ 41.95",
+      "Sushi 12pcs Sashimi 10pcs Dragon Roll 8pcs"));
 
-  ptytry.add(nameprice("Party Tray (S)", "\$ 42.95",
+  ptytry.add(nameprice("Party Tray (S) 36pcs", "\$ 42.95",
       "Sushi 12pcs Sashimi 12pcs California Roll 6pcs Spicy Salmon 6pcs"));
-  ptytry.add(nameprice("Party Tray (M)", "\$ 56.95",
+  ptytry.add(nameprice("Party Tray (M) 46pcs", "\$ 56.95",
       "Sushi 16pcs Sashimi 16pcs Spicy Salmon 6pcs Dynamite Roll 8pcs"));
-  ptytry.add(nameprice("Party Tray (L)", "\$ 76.95",
+  ptytry.add(nameprice("Party Tray (L) 62pcs", "\$ 76.95",
       "Sushi 20pcs Sashimi 20pcs Dynamite Roll 8pcs"));
-  ptytry.add(nameprice("Party Tray (XL)", "\$ 90.95",
+  ptytry.add(nameprice("Party Tray (XL) 76pcs", "\$ 90.95",
       "Sushi 24pcs Sashimi 24pcs Dynamite Roll 8pcs Dragon Roll 8pcs California Roll 6pcs Spicy Salmon 6pcs"));
 }

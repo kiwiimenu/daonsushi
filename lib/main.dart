@@ -180,8 +180,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ), //end
                       Container(
-                          child:
-                              makeCategory(context, lbc, "Lunch Box Combo", 2)),
+                          child: makeCategory(context, lbc,
+                              "Lunch Box Combo (served until 4pm)", 2)),
                       Container(
                         padding: EdgeInsets.only(
                             left: 35, right: 35, top: 15, bottom: 15),
@@ -267,7 +267,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ), //end
                       Container(
                           child: makeCategory(
-                              context, vgcr, "Vege Classic Roll", 6)),
+                              context, vgcr, "Vege Roll 6pcs", 6)),
                       Container(
                         padding: EdgeInsets.only(
                             left: 35, right: 35, top: 15, bottom: 15),
@@ -278,7 +278,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       Container(
                           child: makeCategory(
-                              context, spclrl, "Spicy Classic Roll", 7)),
+                              context, spclrl, "Spicy Roll 6pcs", 7)),
                       Container(
                         padding: EdgeInsets.only(
                             left: 35, right: 35, top: 15, bottom: 15),
@@ -289,7 +289,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       Container(
                           child:
-                              makeCategory(context, cscrl, "Classic Roll", 8)),
+                              makeCategory(context, cscrl, "Classic Roll 6pcs", 8)),
                       Container(
                         padding: EdgeInsets.only(
                             left: 35, right: 35, top: 15, bottom: 15),
@@ -311,7 +311,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       Container(
                           child: makeCategory(
-                              context, splrll, "Special Roll", 10)),
+                              context, splrll, "Special Roll (8-10 pcs)", 10)),
                       Container(
                         padding: EdgeInsets.only(
                             left: 35, right: 35, top: 15, bottom: 15),
