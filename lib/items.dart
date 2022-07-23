@@ -41,7 +41,7 @@ Container itemContainer(String itemname, String price, BuildContext context) {
                       itemname,
                       style: const TextStyle(
                           fontSize: 15,
-                          fontFamily: "Nunito",
+                          fontFamily: "Arial",
                           color: Colors.white),
                     ),
                   )

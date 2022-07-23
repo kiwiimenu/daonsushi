@@ -15,7 +15,7 @@ Row nameprice(String name, String price, [String desc = ""]) {
               style: const TextStyle(
                 color: Colors.white,
                 fontSize: 20,
-                fontFamily: "Nunito",
+                fontFamily: "Arial",
               ),
               // textAlign: TextAlign.left,
             ),
@@ -112,7 +112,8 @@ void createRow() {
   vegeclsicrll.add(nameprice("Cucumber Roll", "\$ 5.95"));
   vegeclsicrll.add(nameprice("Avocado & Cucumber Roll ", "\$ 5.95"));
 
-  ykudn.add(nameprice("Vegetable Yaki Udon", "\$ 11.95","Chicken, Beef, or Shrimp"));
+  ykudn.add(
+      nameprice("Vegetable Yaki Udon", "\$ 11.95", "Chicken, Beef, or Shrimp"));
   ykudn.add(nameprice("Yaki Udon", "\$ 12.95 "));
 
   spcyclrll.add(nameprice("Spicy Crab Roll ", "\$ 6.95"));
@@ -126,12 +127,16 @@ void createRow() {
   clscrll.add(nameprice("Tuna Roll", "\$ 7.95"));
   clscrll.add(nameprice("Unagi Roll", "\$ 7.95"));
 
-  drgnrll.add(nameprice("Black Dragon ", "\$ 15.95","Dynamite Roll with BBQ Eel Topping"));
-  drgnrll.add(nameprice("Green Dragon ", "\$ 14.95","Dynamite Roll with Avacado Topping"));
-  drgnrll.add(nameprice("Gold Dragon ", "\$ 14.95","Dynamite Roll with Salmon Topping"));
+  drgnrll.add(nameprice(
+      "Black Dragon ", "\$ 15.95", "Dynamite Roll with BBQ Eel Topping"));
+  drgnrll.add(nameprice(
+      "Green Dragon ", "\$ 14.95", "Dynamite Roll with Avacado Topping"));
+  drgnrll.add(nameprice(
+      "Gold Dragon ", "\$ 14.95", "Dynamite Roll with Salmon Topping"));
   drgnrll.add(nameprice(
       "Red Dragon ", "\$ 15.95", "Dynamite Roll with Red Tuna Topping"));
-  drgnrll.add(nameprice("White Dragon ", "\$ 14.95","Dynamite Roll with Philadelphia Cream Cheese Topping"));
+  drgnrll.add(nameprice("White Dragon ", "\$ 14.95",
+      "Dynamite Roll with Philadelphia Cream Cheese Topping"));
 
   spclrll.add(nameprice("Caterpillar Roll", "\$ 13.95",
       "Large California Roll Topped with Avacado and BBQ Eel"));
