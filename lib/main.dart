@@ -63,7 +63,6 @@ class MyApp extends StatelessWidget {
         hoverColor: Colors.transparent,
         highlightColor: Colors.transparent,
         splashColor: Colors.transparent,
-        fontFamily: "Nunito",
       ),
       home: const MyHomePage(title: 'Top Bar'),
     );
@@ -140,7 +139,10 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Salad/Soup/Rice",
-                          style: TextStyle(color: Colors.white, fontSize: 24),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                          ),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -159,7 +161,10 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Salmon Sashimi",
-                          style: TextStyle(color: Colors.white, fontSize: 24),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                          ),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -172,8 +177,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ), //end
                       Container(
-                          child:
-                              makeCategory(context, lbc, "Lunch Box Combo", 2)),
+                          child: makeCategory(context, lbc,
+                              "Lunch Box Combo (served until 4pm)", 2)),
                       Container(
                         padding: EdgeInsets.only(
                             left: 35, right: 35, top: 15, bottom: 15),
@@ -189,7 +194,10 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Dinner Box Combo",
-                          style: TextStyle(color: Colors.white, fontSize: 24),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                          ),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -237,7 +245,10 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Yaki Udon",
-                          style: TextStyle(color: Colors.white, fontSize: 24),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                          ),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -251,7 +262,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ), //end
                       Container(
                           child: makeCategory(
-                              context, vgcr, "Vege Classic Roll", 6)),
+                              context, vgcr, "Vege Roll 6pcs", 6)),
                       Container(
                         padding: EdgeInsets.only(
                             left: 35, right: 35, top: 15, bottom: 15),
@@ -262,7 +273,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       Container(
                           child: makeCategory(
-                              context, spclrl, "Spicy Classic Roll", 7)),
+                              context, spclrl, "Spicy Roll 6pcs", 7)),
                       Container(
                         padding: EdgeInsets.only(
                             left: 35, right: 35, top: 15, bottom: 15),
@@ -273,7 +284,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       Container(
                           child:
-                              makeCategory(context, cscrl, "Classic Roll", 8)),
+                              makeCategory(context, cscrl, "Classic Roll 6pcs", 8)),
                       Container(
                         padding: EdgeInsets.only(
                             left: 35, right: 35, top: 15, bottom: 15),
@@ -295,7 +306,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       Container(
                           child: makeCategory(
-                              context, splrll, "Special Roll", 10)),
+                              context, splrll, "Special Roll (8-10 pcs)", 10)),
                       Container(
                         padding: EdgeInsets.only(
                             left: 35, right: 35, top: 15, bottom: 15),
@@ -311,7 +322,10 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Roll Combo",
-                          style: TextStyle(color: Colors.white, fontSize: 24),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                          ),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -336,7 +350,10 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Combo Special",
-                          style: TextStyle(color: Colors.white, fontSize: 24),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                          ),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -353,7 +370,10 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 55,
                         child: Text(
                           "Party Tray",
-                          style: TextStyle(color: Colors.white, fontSize: 24),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                          ),
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -422,8 +442,8 @@ class _MyHomePageState extends State<MyHomePage> {
       context, category cat, String categoryName, int _current) {
     return Container(
         child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            // mainAxisAlignment: MainAxisAlignment.start,
+            // crossAxisAlignment: CrossAxisAlignment.start,
             children: [
           Container(
             margin: EdgeInsets.only(top: 35),
