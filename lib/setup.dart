@@ -3,59 +3,36 @@
 import 'package:flutter/material.dart';
 import 'package:daonsushi/main.dart';
 
-Row nameprice(String name, String price, [String desc = ""]) {
+Row nameprice(String name, String price) {
   return Row(
     children: [
       Expanded(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              name,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-                fontFamily: "Nunito",
-              ),
-              // textAlign: TextAlign.left,
-            ),
-            desc == ""
-                ? Container()
-                : Text(
-                    desc,
-                    style: const TextStyle(
-                      color: Color.fromARGB(
-                        255,
-                        202,
-                        202,
-                        202,
-                      ),
-                    ),
-                  ),
-          ],
-        ),
-      ),
+          child: Text(
+        name,
+        style: TextStyle(color: Colors.white),
+      )),
       Container(
           child: Text(
         price,
-        style: const TextStyle(color: Colors.white, fontSize: 20),
+        style: TextStyle(
+          color: Colors.white,
+        ),
         textAlign: TextAlign.right,
       )),
-      const SizedBox(
-        height: 50,
+      SizedBox(
+        height: 25,
       )
     ],
   );
 }
 
 void createRow() {
-  appet.add(nameprice("Edamame", "\$ 5.95 ", "Boiled green bean"));
-  appet.add(nameprice(
-      "Agedashi Tofu", "\$ 6.95 ", "Deep fried tofu with teriyaki sauce"));
-  appet.add(nameprice("Sashimi Appetizer", "\$ 10.95", "6pcs"));
-  appet.add(nameprice("Shrimp Tempura", "\$ 11.95", "4pcs"));
-  appet.add(nameprice("Sushi Appetizer", "\$ 10.95", "6pcs"));
-  appet.add(nameprice("Tempura Mix", "\$ 12.95", "Shrimp 4pcs Vege 4pcs"));
+  appet.add(nameprice("Edamame", "\$ 5.95 "));
+  appet.add(nameprice("Agedashi Tofu", "\$ 6.95 "));
+  appet.add(nameprice("Sashimi Appetizer", "\$ 10.95 "));
+  appet.add(nameprice("Shrimp Tempura", "\$ 11.95 "));
+  appet.add(nameprice("Sushi Appetizer", "\$ 10.95 "));
+  appet.add(nameprice("Tempura Mix", "\$ 12.95 "));
 
   sldsprc.add(nameprice("Green Salad", "\$ 5.95"));
   sldsprc.add(nameprice("Seaweed Salad", "\$ 6.95"));
@@ -70,27 +47,17 @@ void createRow() {
   lnchbxcmb.add(
       nameprice("Sushi & Rolls", "\$ 14.95", "Sushi 6pcs Spicy Roll 6pcs"));
   lnchbxcmb.add(nameprice("Sashimi & Rolls", "\$ 14.95"));
-  lnchbxcmb.add(nameprice(
-      "Roll Lunch Box", "\$ 13.95", "Spicy Roll 6pcs California Roll 6pcs"));
-  lnchbxcmb.add(nameprice(
-      "Bulgogi Lunch Box", "\$ 13.95", "Marinated Korean Style Beef"));
-  lnchbxcmb.add(nameprice("Combo Lunch Box", "\$ 15.95",
-      "Sushi 4pcs Sashimi 4pcs Spicy Roll 6pcs"));
-  lnchbxcmb
-      .add(nameprice("Teriyaki Box", "\$ 13.95", "Beef, Chicken, or Salmon"));
+  lnchbxcmb.add(nameprice("Roll Lunch Box", "\$ 13.95"));
+  lnchbxcmb.add(nameprice("Bulgogi Lunch Box", "\$ 13.95"));
+  lnchbxcmb.add(nameprice("Combo Lunch Box", "\$ 15.95"));
+  lnchbxcmb.add(nameprice("Teriyaki Box", "\$ 13.95"));
 
-  dnbxcmb.add(nameprice(
-      "Sushi Dinner Box", "\$ 17.95", "Sushi 8pcs Spicy Salmon Roll 6pcs"));
-  dnbxcmb.add(nameprice(
-      "Sashimi Dinner Box", "\$ 17.95", "Sashimi 8pcs Spicy Salmon Roll 6pcs"));
-  dnbxcmb.add(nameprice("Roll Dinner Box", "\$ 21.95",
-      "Spicy Salmon Roll 6pcs Dynamite Roll 8pcs"));
-  dnbxcmb.add(nameprice(
-      "Bulgogi Dinner Box", "\$ 16.95", "Marinated Korean Style Beef"));
-  dnbxcmb.add(
-      nameprice("Teriyaki Dinner Box", "\$ 16.95", "Beef, Chicken, or Salmon"));
-  dnbxcmb.add(nameprice("Combo Dinner Box", "\$ 19.95",
-      "Sushi 5pcs, Sashimi 5pcs, Spicy Salmon 6pcs"));
+  dnbxcmb.add(nameprice("Sushi Dinner Box", "\$ 17.95 "));
+  dnbxcmb.add(nameprice("Sashimi Dinner Box", "\$ 17.95 "));
+  dnbxcmb.add(nameprice("Roll Dinner Box", "\$ 21.95 "));
+  dnbxcmb.add(nameprice("Bulgogi Dinner Box", "\$ 16.95 "));
+  dnbxcmb.add(nameprice("Teriyaki Dinner Box", "\$ 16.95 "));
+  dnbxcmb.add(nameprice("Combo Dinner Box", "\$ 19.95 "));
 
   tryak.add(nameprice("Beef Teriyaki ", "\$ 16.95"));
   tryak.add(nameprice("Chicken Teriyaki", "\$ 16.95"));
@@ -126,55 +93,38 @@ void createRow() {
   clscrll.add(nameprice("Tuna Roll", "\$ 7.95"));
   clscrll.add(nameprice("Unagi Roll", "\$ 7.95"));
 
-  drgnrll.add(nameprice("Black Dragon ", "\$ 15.95","Dynamite Roll with BBQ Eel Topping"));
-  drgnrll.add(nameprice("Green Dragon ", "\$ 14.95","Dynamite Roll with Avacado Topping"));
-  drgnrll.add(nameprice("Gold Dragon ", "\$ 14.95","Dynamite Roll with Salmon Topping"));
-  drgnrll.add(nameprice(
-      "Red Dragon ", "\$ 15.95", "Dynamite Roll with Red Tuna Topping"));
-  drgnrll.add(nameprice("White Dragon ", "\$ 14.95","Dynamite Roll with Philadelphia Cream Cheese Topping"));
+  spclrll.add(nameprice("Spicy Crab Roll ", "\$ 6.95"));
+  spclrll.add(nameprice("Spicy Salmon Roll ", "\$ 6.95"));
+  spclrll.add(nameprice("Spicy Tuna Roll", "\$ 7.95"));
 
-  spclrll.add(nameprice("Caterpillar Roll", "\$ 13.95",
-      "Large California Roll Topped with Avacado and BBQ Eel"));
-  spclrll.add(nameprice("Crispy Crunch Roll ", "\$ 15.95",
-      "Deep Fried Roll with Spicy Salmon, Crab, Avacado, and Cucumber"));
-  spclrll.add(nameprice("Double Shrimp Roll ", "\$ 15.95",
-      "Large California Roll with 4pcs Deep Fried Shrimp"));
-  spclrll.add(nameprice("Dynamite Roll", "\$ 13.95",
-      "Large California Roll with 2pcs Deep Fried Shrimp"));
-  spclrll.add(nameprice("Hawaiian Roll", "\$ 13.95",
-      "Large Roll with Crab, Mango, Avacado, and Cucumber"));
-  spclrll.add(nameprice("Phili Roll ", "\$ 13.95",
-      "Large Roll with Fresh Salmon, Cream Cheese, Crab, and Avacado"));
-  spclrll.add(nameprice("Spider Roll", "\$ 16.95",
-      "Large Roll with Deep Fried Soft Shell Crab, Avacado, and Cucumber"));
-  spclrll.add(nameprice("Torched Salmon Roll", "\$ 15.95",
-      "Dynamite Roll Topping with Torched Salmon"));
-  spclrll.add(nameprice(
-      "Rainbow Roll ", "\$ 14.95", "Large California Roll Topped with Fish"));
-  spclrll.add(nameprice("Yellow Sun Roll ", "\$ 14.95",
-      "Large Roll with Spicy Salmon, Crab, and Cucumber Topped with Salmon"));
+  drgnrll.add(nameprice("Black Dragon ", "\$ 15.95"));
+  drgnrll.add(nameprice("Green Dragon ", "\$ 14.95"));
+  drgnrll.add(nameprice("Gold Dragon ", "\$ 14.95"));
+  drgnrll.add(nameprice("Red Dragon ", "\$ 15.95"));
+  drgnrll.add(nameprice("White Dragon ", "\$ 14.95"));
 
-  rllcmbo.add(nameprice(
-      "Dynamite & Sushi", "\$ 19.95", "Dynamite Roll 8pcs Sushi 5pcs"));
-  rllcmbo.add(nameprice(
-      "Dynamite & Sashimi", "\$ 19.95", "Dynamite Roll 8pcs Sashimi 5pcs"));
-  rllcmbo.add(
-      nameprice("Dynamite & Udon", "\$ 23.95", "Dynamite Roll 8pcs + Udon"));
-  rllcmbo.add(nameprice(
-      "California Roll & Udon", "\$ 15.95", "California Roll 6pcs + Udon"));
-  rllcmbo.add(nameprice(
-      "Spicy Roll & Udon", "\$ 16.95", "Spicy Salmon Roll 6pcs + Udon"));
-  rllcmbo.add(nameprice("Assorted Roll Combo", "\$ 17.95",
-      "California Roll 6pcs Spicy Salmon 6pcs Avo/Salmon 6pcs"));
-  rllcmbo.add(nameprice("Spicy Roll Combo", "\$ 19.95",
-      "Spicy California 6pcs Spicy Salmon 6pcs Spicy Crab 6pcs"));
+  spclrll.add(nameprice("Caterpillar Roll", "\$ 13.95"));
+  spclrll.add(nameprice("Crispy Crunch Roll ", "\$ 15.95"));
+  spclrll.add(nameprice("Double Shrimp Roll ", "\$ 15.95"));
+  spclrll.add(nameprice("Dynamite Roll", "\$ 13.95"));
+  spclrll.add(nameprice("Hawaiian Roll", "\$ 13.95"));
+  spclrll.add(nameprice("Phili Roll ", "\$ 13.95"));
+  spclrll.add(nameprice("Spider Roll", "\$ 16.95"));
+  spclrll.add(nameprice("Torched Salmon Roll", "\$ 15.95"));
+  spclrll.add(nameprice("Rainbow Roll ", "\$ 14.95"));
+  spclrll.add(nameprice("Yellow Sun Roll ", "\$ 14.95"));
 
-  ssmshicmb.add(
-      nameprice("Sashimi & Sushi (S)", "\$ 12.95", "Sushi 6pcs Sashimi 4pcs"));
-  ssmshicmb.add(
-      nameprice("Sashimi & Sushi (M)", "\$ 17.95", "Sushi 8pcs Sashimi 6pcs"));
-  ssmshicmb.add(nameprice(
-      "Sashimi & Sushi (L)", "\$  29.95", "Sushi 10pcs Sashimi 10pcs"));
+  rllcmbo.add(nameprice("Dynamite & Sushi", "\$ 19.95 "));
+  rllcmbo.add(nameprice("Dynamite & Sashimi", "\$ 19.95 "));
+  rllcmbo.add(nameprice("Dynamite & Udon", "\$ 23.95 "));
+  rllcmbo.add(nameprice("California Roll & Udon", "\$ 15.95 "));
+  rllcmbo.add(nameprice("Spicy Roll & Udon", "\$ 16.95 "));
+  rllcmbo.add(nameprice("Assorted Roll Combo", "\$ 17.95 "));
+  rllcmbo.add(nameprice("Spicy Roll Combo", "\$ 19.95 "));
+
+  ssmshicmb.add(nameprice("Sashimi & Sushi (S)", "\$ 12.95"));
+  ssmshicmb.add(nameprice("Sashimi & Sushi (M)", "\$ 17.95"));
+  ssmshicmb.add(nameprice("Sashimi & Sushi (L)", "\$  29.95"));
 
   cmbspcl.add(
       nameprice("Combo A", "\$ 19.95", "Sushi 6pcs Sashimi 4pcs Roll 6pcs"));
@@ -185,12 +135,16 @@ void createRow() {
   cmbspcl.add(nameprice(
       "Combo D", "\$ 41.95", "Sushi 12pcs Sashimi 10pcs Dragon Roll 8pcs"));
 
-  ptytry.add(nameprice("Party Tray (S)", "\$ 42.95",
-      "Sushi 12pcs Sashimi 12pcs California Roll 6pcs Spicy Salmon 6pcs"));
-  ptytry.add(nameprice("Party Tray (M)", "\$ 56.95",
-      "Sushi 16pcs Sashimi 16pcs Spicy Salmon 6pcs Dynamite Roll 8pcs"));
-  ptytry.add(nameprice("Party Tray (L)", "\$ 76.95",
-      "Sushi 20pcs Sashimi 20pcs Dynamite Roll 8pcs"));
-  ptytry.add(nameprice("Party Tray (XL)", "\$ 90.95",
-      "Sushi 24pcs Sashimi 24pcs Dynamite Roll 8pcs Dragon Roll 8pcs California Roll 6pcs Spicy Salmon 6pcs"));
+  ptytry.add(nameprice(
+      "Party Tray (S) 36pcs (Sushi 12pcs Sashimi 12pcs California Roll 6pcs Spicy Salmon 6pcs)",
+      "\$ 42.95 "));
+  ptytry.add(nameprice(
+      "Party Tray (M) 45pcs (Sushi 16pcs Sashimi 16pcs Spicy Salmon 6pcs Dynamite Roll 8pcs)",
+      "\$ 56.95 "));
+  ptytry.add(nameprice(
+      "Party Tray (L) 62pcs (Sushi 20pcs Sashimi 20pcs Dynamite Roll 8pcs)",
+      "\$ 76.95 "));
+  ptytry.add(nameprice(
+      "Party Tray (XL) 76pcs (Sushi 24pcs Sashimi 24pcs Dynamite Roll 8pcs Dragon Roll 8pcs California Roll 6pcs Spicy Salmon 6pcs)",
+      "\$ 90.95 "));
 }
