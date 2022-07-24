@@ -63,7 +63,7 @@ class MyApp extends StatelessWidget {
         hoverColor: Colors.transparent,
         highlightColor: Colors.transparent,
         splashColor: Colors.transparent,
-        fontFamily: "Arial",
+        fontFamily: "Nunito",
       ),
       home: const MyHomePage(title: 'Top Bar'),
     );
@@ -143,7 +143,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 24,
-                            fontFamily: "Arial",
+                            fontFamily: "Nunito",
                           ),
                           textAlign: TextAlign.center,
                         ),
@@ -166,7 +166,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 24,
-                            fontFamily: "Arial",
+                            fontFamily: "Nunito",
                           ),
                           textAlign: TextAlign.center,
                         ),
@@ -200,7 +200,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 24,
-                            fontFamily: "Arial",
+                            fontFamily: "Nunito",
                           ),
                           textAlign: TextAlign.center,
                         ),
@@ -252,7 +252,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 24,
-                            fontFamily: "Arial",
+                            fontFamily: "Nunito",
                           ),
                           textAlign: TextAlign.center,
                         ),
@@ -330,7 +330,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 24,
-                            fontFamily: "Arial",
+                            fontFamily: "Nunito",
                           ),
                           textAlign: TextAlign.center,
                         ),
@@ -359,7 +359,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 24,
-                            fontFamily: "Arial",
+                            fontFamily: "Nunito",
                           ),
                           textAlign: TextAlign.center,
                         ),
@@ -380,7 +380,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 24,
-                            fontFamily: "Arial",
+                            fontFamily: "Nunito",
                           ),
                           textAlign: TextAlign.center,
                         ),
