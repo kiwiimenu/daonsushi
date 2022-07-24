@@ -133,7 +133,7 @@ void createRow() {
   cmbspcl.add(nameprice(
       "Combo C", "\$ 35.95", "Sushi 10pcs Sashimi 8pcs Dynamite Roll 8pcs"));
   cmbspcl.add(nameprice(
-      "Combo D", "\$ 41.95", "Sushi 12pcs Sashimi 10pcs Dragon Roll 8pcs"));
+      "Combo D (Sushi 12pcs Sashimi 10pcs Dragon Roll 8pcs)", "\$ 41.95"));
 
   ptytry.add(nameprice(
       "Party Tray (S) 36pcs (Sushi 12pcs Sashimi 12pcs California Roll 6pcs Spicy Salmon 6pcs)",
